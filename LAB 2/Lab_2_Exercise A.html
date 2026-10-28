@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic information about the HTML document -->
+    <meta charset="UTF-8">
+    <title>Faculty Programming Workshop</title>
+</head>
+<body>
+
+    <!-- 1. Semantic Structure: Header -->
+    <header>
+        <h1>Faculty Programming Workshop 2026</h1>
+        <p>Learn, Code and Innovate!</p>
+    </header>
+
+    <!-- Navigation links to different sections of the page -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <!-- Main content of the event page -->
+    <main>
+
+        <!-- 2. About the Event section -->
+        <section id="about">
+            <h2>About the Event</h2>
+
+            <!-- Article introducing the first speaker -->
+            <article>
+                <h3>Speaker 1: Dr. Ahmad</h3>
+                <p>
+                    Dr. Ahmad is a software engineer who will teach
+                    students the basics of programming and problem-solving.
+                </p>
+            </article>
+
+            <!-- Article introducing the second speaker -->
+            <article>
+                <h3>Speaker 2: Ms. Siti</h3>
+                <p>
+                    Ms. Siti is a web developer who will introduce students
+                    to HTML and the fundamentals of web development.
+                </p>
+            </article>
+        </section>
+
+        <!-- 3. Event Schedule section -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+
+            <!-- Schedule table with colspan and rowspan -->
+            <table border="1">
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+
+                <tr>
+                    <td>8:00 AM - 9:00 AM</td>
+                    <td>Registration</td>
+                    <td rowspan="2">Main Hall</td>
+                    <td>Mr. Ali</td>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td>Opening Ceremony</td>
+                    <td>Dr. Ahmad</td>
+                </tr>
+
+                <tr>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Introduction to Programming</td>
+                    <td>Computer Lab 1</td>
+                    <td>Ms. Siti</td>
+                </tr>
+
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td>HTML Workshop</td>
+                    <td>Computer Lab 1</td>
+                    <td>Mr. Abu</td>
+                </tr>
+
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td colspan="3">Lunch Break</td>
+                </tr>
+
+                <tr>
+                    <td>1:00 PM - 2:00 PM</td>
+                    <td>Hands-on Coding</td>
+                    <td>Computer Lab 2</td>
+                    <td>Dr. Ahmad</td>
+                </tr>
+
+                <tr>
+                    <td>2:00 PM - 3:00 PM</td>
+                    <td>Project Presentation</td>
+                    <td>Computer Lab 2</td>
+                    <td>Ms. Siti</td>
+                </tr>
+
+                <tr>
+                    <td>3:00 PM - 4:00 PM</td>
+                    <td>Closing Ceremony</td>
+                    <td>Main Hall</td>
+                    <td>Mr. Ali</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 4. Registration Form section -->
+        <section id="registration">
+            <h2>Event Registration</h2>
+
+            <!-- Form sends registration data to register.html using POST -->
+            <form action="register.html" method="post">
+
+                <!-- Text input for student's full name -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+
+                <!-- Text input for student's matric number -->
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" required>
+                <br><br>
+
+                <!-- Email input for student's email address -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <!-- Radio buttons allow the student to select one study year -->
+                <p>Year of Study:</p>
+
+                <input type="radio" id="year1" name="year" value="Year 1" required>
+                <label for="year1">Year 1</label>
+
+                <input type="radio" id="year2" name="year" value="Year 2">
+                <label for="year2">Year 2</label>
+
+                <input type="radio" id="year3" name="year" value="Year 3">
+                <label for="year3">Year 3</label>
+
+                <input type="radio" id="year4" name="year" value="Year 4">
+                <label for="year4">Year 4</label>
+
+                <br><br>
+
+                <!-- Checkboxes allow students to select multiple sessions -->
+                <p>Choose Sessions to Join:</p>
+
+                <input type="checkbox" id="session1" name="sessions" value="Programming">
+                <label for="session1">Introduction to Programming</label>
+                <br>
+
+                <input type="checkbox" id="session2" name="sessions" value="HTML">
+                <label for="session2">HTML Workshop</label>
+                <br>
+
+                <input type="checkbox" id="session3" name="sessions" value="Coding">
+                <label for="session3">Hands-on Coding</label>
+                <br>
+
+                <input type="checkbox" id="session4" name="sessions" value="Presentation">
+                <label for="session4">Project Presentation</label>
+
+                <br><br>
+
+                <!-- Dropdown menu for selecting the programme or faculty -->
+                <label for="programme">Programme or Faculty:</label>
+
+                <select id="programme" name="programme" required>
+                    <option value="">-- Select Programme --</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Information Systems">Information Systems</option>
+                </select>
+
+                <br><br>
+
+                <!-- Submit button for the registration form -->
+                <input type="submit" value="Register">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 5. Footer containing organiser information and copyright -->
+    <footer>
+        <p>Organised by the Faculty Programming Club.</p>
+        <p>&copy; 2026 Faculty Programming Workshop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
