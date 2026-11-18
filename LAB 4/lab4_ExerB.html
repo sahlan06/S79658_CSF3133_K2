@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" href="cafe.css">
+    <!-- Internal CSS: content, prices, headings and form -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            padding: 35px 15px;
+            text-align: center;
+            color: white;
+            background-color: #174a68;
+        }
+
+        h1 { text-decoration: overline; }
+
+        main {
+            width: 90%;
+            max-width: 950px;
+            margin: 25px auto;
+        }
+
+        section {
+            margin: 25px 0;
+            padding: 24px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #174a68;
+            text-decoration: underline;
+        }
+
+        p { color: #333333; text-align: justify; }
+
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 12px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        .old-price {
+            color: #777777;
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
+
+        .new-price {
+            color: #C0392B;
+            font-weight: bold;
+        }
+
+        article {
+            padding: 12px 16px;
+            margin: 12px 0;
+            border-left: 4px solid #E67E22;
+            background-color: #fffaf3;
+        }
+
+        figure { margin: 0; }
+
+        video {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .feedback-form {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            margin: 15px auto;
+            background-color: #FDEBD0;
+            border: 1px solid #e0b987;
+            border-radius: 8px;
+        }
+
+        .feedback-form > label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaaaaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .feedback-form fieldset {
+            margin-top: 15px;
+            border: 1px solid #c9a77d;
+        }
+
+        .feedback-form fieldset label {
+            display: inline-block;
+            margin: 5px 12px 5px 0;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 11px 20px;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            background-color: #174a68;
+            cursor: pointer;
+        }
+
+        button:hover { background-color: #E67E22; }
+
+        footer {
+            padding: 22px;
+            text-align: center;
+            color: white;
+            background-color: #174a68;
+        }
+
+        footer address { font-style: normal; }
+        footer a { color: #ffe0a8; }
+
+        /* Interactive link states in the required order */
+        a:link { color: #1A5276; }
+        a:visited { color: #7D3C98; }
+        a:hover { color: #E67E22; }
+        a:active { color: #C0392B; }
+
+        @media (max-width: 600px) {
+            main { width: 95%; }
+            section { padding: 16px; }
+            .feedback-form { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Error corrections from the supplied code:
+         Line 8-10: corrected list-style-type from "no" to "none" (navigation styles moved to cafe.css).
+         Lines 13-16: reordered link states so :visited comes before :hover.
+         Line 17: changed invalid "overlined" to valid "overline".
+         Line 18: added the missing colon after color.
+         Line 19-22: changed #intro to .intro to match class="intro" and closed the rule.
+         Line 22: changed "highlight" to the class selector ".highlight".
+         Line 34: changed href="menu" to href="#menu".
+         Lines 42 and 46: replaced repeated id="item" with class="item" (unique IDs are required).
+         Lines 53-56: added video controls and corrected source type to video/mp4.
+         Also added the required viewport meta tag, figure caption, feedback section and email address. -->
+
+    <!-- Header -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p>Fresh coffee, tasty food and a place to connect.</p>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Menu section -->
+        <section id="menu">
+            <h2>Today's Menu</h2>
+            <p class="intro">Freshly brewed coffee and local delights every day. Visit e-Café Campus and enjoy our special prices!</p>
+
+            <article class="item">
+                <h3>Kopi Tarik</h3>
+                <p>Traditional pulled coffee, freshly prepared for you.</p>
+                <p>Promotion: <span class="old-price">RM 4.50</span> <span class="new-price">RM 3.50</span></p>
+            </article>
+
+            <article class="item">
+                <h3>Nasi Lemak</h3>
+                <p>Fragrant coconut rice served with sambal and classic sides.</p>
+                <p>Promotion: <span class="old-price">RM 6.50</span> <span class="new-price">RM 5.00</span></p>
+            </article>
+        </section>
+
+        <!-- Video section -->
+        <section id="video">
+            <h2>Watch Our Story</h2>
+            <figure>
+                <video controls width="640" height="360">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Our café video sample. Replace the sample MP4 with your own café video if required.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Feedback form section -->
+        <section id="feedback">
+            <h2>Customer Feedback</h2>
+            <p>Tell us about your visit and your favourite menu items.</p>
+
+            <form class="feedback-form" action="#" method="post">
+                <label for="customer-name">Name</label>
+                <input type="text" id="customer-name" name="name" placeholder="Enter your name" required>
+
+                <label for="customer-email">E-mail</label>
+                <input type="email" id="customer-email" name="email" placeholder="name@example.com" required>
+
+                <fieldset>
+                    <legend>Visit type</legend>
+                    <label><input type="radio" name="visit-type" value="dine-in" required> Dine-in</label>
+                    <label><input type="radio" name="visit-type" value="take-away"> Take-away</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favourite items</legend>
+                    <label><input type="checkbox" name="favourite" value="kopi-tarik"> Kopi Tarik</label>
+                    <label><input type="checkbox" name="favourite" value="nasi-lemak"> Nasi Lemak</label>
+                    <label><input type="checkbox" name="favourite" value="tea"> Tea</label>
+                </fieldset>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer and contact information -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus. All rights reserved.</p>
+        <address>Email: <a href="mailto:ecafe@campus.example">ecafe@campus.example</a></address>
+    </footer>
+</body>
+</html>

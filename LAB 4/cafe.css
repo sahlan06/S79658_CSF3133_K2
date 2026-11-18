@@ -1,0 +1,55 @@
+/* External CSS: navigation bar for e-Café Campus */
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #1A5276;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 24px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #E67E22;
+}
+
+.navbar a:active {
+    color: white;
+    background-color: #C0392B;
+}
+
+/* Small-screen navigation */
+@media (max-width: 500px) {
+    .navbar a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}

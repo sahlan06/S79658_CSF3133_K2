@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Terengganu | Tourism Promotion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS: page-specific heading and section styling -->
+    <style>
+        h1 { letter-spacing: 2px; }
+        #trip { scroll-margin-top: 90px; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero">
+        <p class="eyebrow">Malaysia's East Coast</p>
+        <h1>Discover Terengganu</h1>
+        <p>Beautiful islands, rich culture and unforgettable memories.</p>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Destinations -->
+        <section id="destinations" class="content-section">
+            <h2>Explore Our Destinations</h2>
+            <p class="section-intro">Choose your next escape and enjoy our special student-friendly promotions.</p>
+
+            <div class="destination-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Clear tropical sea">
+                    <div class="card-content">
+                        <h3>Redang Island</h3>
+                        <p>Relax on white sandy beaches and discover colourful marine life.</p>
+                        <p class="price"><span class="old-price">RM 299</span> <strong>RM 199</strong> per person</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80" alt="Island beach with palm trees">
+                    <div class="card-content">
+                        <h3>Perhentian Islands</h3>
+                        <p>Enjoy snorkelling, island hopping and peaceful seaside views.</p>
+                        <p class="price"><span class="old-price">RM 350</span> <strong>RM 250</strong> per person</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=80" alt="Waves along a tropical coast">
+                    <div class="card-content">
+                        <h3>Kap​​as Island</h3>
+                        <p>A quiet island getaway with clear water and beautiful coastal scenery.</p>
+                        <p class="price"><span class="old-price">RM 220</span> <strong>RM 160</strong> per person</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="seat-info">Trip seats filled:
+                <meter min="0" max="40" value="28">28 out of 40</meter>
+                <strong>28 / 40</strong>
+            </p>
+        </section>
+
+        <!-- Promotional video -->
+        <section id="video" class="content-section alternate">
+            <h2>Experience Terengganu</h2>
+            <figure>
+                <video controls width="720" height="405">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption class="caption">Promotional video sample. Replace the video source with your own Terengganu tourism MP4 for your final presentation.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Trip interest form -->
+        <section id="trip" class="content-section">
+            <h2>Plan Your Trip</h2>
+            <p class="section-intro">Complete this form to tell us about your travel interests.</p>
+            <form class="trip-form" action="#" method="post">
+                <label for="visitor-name">Name</label>
+                <input type="text" id="visitor-name" name="name" placeholder="Enter your name" required>
+
+                <label for="visitor-email">E-mail</label>
+                <input type="email" id="visitor-email" name="email" placeholder="name@example.com" required>
+
+                <fieldset>
+                    <legend>Traveller type</legend>
+                    <label><input type="radio" name="traveller" value="student" required> Student</label>
+                    <label><input type="radio" name="traveller" value="staff"> Staff</label>
+                    <label><input type="radio" name="traveller" value="public"> Public</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests</legend>
+                    <label><input type="checkbox" name="interest" value="islands"> Islands</label>
+                    <label><input type="checkbox" name="interest" value="food"> Food</label>
+                    <label><input type="checkbox" name="interest" value="culture"> Culture</label>
+                    <label><input type="checkbox" name="interest" value="nature"> Nature</label>
+                </fieldset>
+
+                <button type="submit">Submit Interest</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Discover Terengganu Tourism. All rights reserved.</p>
+        <address>Contact us: <a href="mailto:info@discoverterengganu.example">info@discoverterengganu.example</a></address>
+    </footer>
+</body>
+</html>
